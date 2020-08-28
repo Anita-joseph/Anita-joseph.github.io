@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="author" content="Anita JOSEPH">
+    <link rel="icon" href="icone.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Anita Joseph | Responsive front-end web design</title>
+    <style>
+        body {
+            background: no-repeat url("./img/computer.jpg");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: white;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        .header {
+            background-color: rgb(105, 163, 230);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .main__container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px;
+            height: 100vh;
+        }
+        
+        @media (max-width: 768px) {
+            .main__container {
+                height: 100%;
+            }
+        }
+        
+        a img {
+            width: 199px;
+            height: 200px;
+            border-radius: 19px;
+        }
+        
+        a img:hover {
+            -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.1, 1.1);
+        }
+        
+        a img:hover {
+            /* change text color on hover */
+            color: var(--color-blue);
+        }
+        
+        a img:hover::after {
+            opacity: 1;
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3e78bb;
+            font-size: 20px;
+            color: #fff;
+            position: relative;
+            padding: 40px;
+        }
+        
+        footer a {
+            color: #0000c1;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <h1> Responsive design</h1>
+    </section>
+    <div class="main__container">
+        <a href="./404-not-found-master/index.html"><img src="./img/404-screenshot.PNG" alt="404 not found page" /></a>
+        <a href="./Team-page/index.html"><img src="./img/team-page-screenshot.PNG" alt="Team page" /></a>
+        <a href="./Recipe-page/index.html"><img src="./img/recipe-screenshot.PNG" alt="Recipe page" /></a>
+        <a href="./Interior-decoration/index.html"><img src="./img/interior-design-screenshot.PNG" alt="Interior Design" /></a>
+        <a href="./My-gallery/index.html"><img src="./img/gallery-screenshot.PNG" alt="My Gallery" /></a>
+        <a href="./Checkout-page-master/index.html"><img src="./img/checkout-page-screenshot.PNG" alt="Checkout page" /></a>
+        <a href="./Edie-homepage-master/index.html"><img src="./img/edie-homepage-screenshot.png" alt="Edie home page" /></a>
+        <a href="./Four-card-Feature-section/index.html"><img src="./img/four-card-features.png" alt="Four card features page" /></a>
+        <a href="./Fylo-data-storage-component/index.html"><img src="./img/fylo-screenshot.png" alt="Fylo-data-storage-component" /></a>
+    </div>
+    <div class="footer">
+        <footer>
+            Anita JOSEPH @<a href="https://devchallenges.io/"> Dev Challenges</a>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+</html>
