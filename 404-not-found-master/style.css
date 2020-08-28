@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	--text-color: #333333;
+	--white-text: #fff;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Inconsolata';
+	font-style: normal;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+}
+
+.main--container {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 2%;
+}
+
+header {
+	position: absolute;
+}
+
+header h1 {
+	width: 133px;
+	height: 25px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 25px;
+	letter-spacing: -0.08em;
+	text-transform: uppercase;
+	color: ;
+}
+
+h2 {
+	width: 586px;
+	font-family: Space Mono;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 95px;
+	letter-spacing: -0.035em;
+	color: var(--text-color);
+}
+
+.main--section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	position: relative;
+	font-family: 'Space Mono';
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: -0.035em;
+	color: #4F4F4F;
+	padding: 64px 0 0;
+}
+
+aside.left--image {
+	width: 50%;
+}
+
+aside.left--image img {
+	max-width: 100%;
+	height: auto;
+	z-index: -1;
+}
+
+aside.right--text {
+	width: 50%;
+}
+
+aside.right--text p {
+	width: 381px;
+}
+
+.right--text button {
+	width: 216px;
+	height: 68px;
+	background-color: var(--text-color);
+	color: var(--white-text);
+	margin: 3rem 0;
+	font-family: 'Space Mono';
+	text-transform: uppercase;
+}
+
+footer a {
+	bottom: 0;
+}
+
+footer.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	top: 0vh;
+}
+
+@media all and (max-width: 768px)
+{
+	body {
+		display: flex;
+		min-width: 768px;
+	}
+
+	.main--container {
+		width: 100%;
+		display: flex;
+		padding: 30px 50px;
+	}
+
+	.main--section {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	header {
+		margin: 0;
+	}
+
+	header h1 {
+		margin: 0;
+	}
+
+	aside.left--image img{
+		width: 100%;
+		object-fit: contain;
+	}
+
+	aside.right--text {
+		width: 100%;
+		text-align: left;
+		left: 24px;
+		top: 407px;
+	}
+
+	aside.right-text  > h2 {
+		width: 350px;
+		height: 142px;
+		font-size: 3rem;
+		line-height: 71px;
+		letter-spacing: -0.035em;
+	}
+
+	p {
+		margin-top: 27px;
+	}
+
+	footer.footer {
+		display: flex;
+		flex-direction: column;
+		margin-top: 26px;
+	}
+
+	button {
+	    margin: 67px 24%;
+	}
+
+}
+
