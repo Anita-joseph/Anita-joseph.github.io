@@ -1,0 +1,312 @@
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,300&display=swap');
+         :root {
+            --background-color: #fff;
+            --text-color: #333;
+            --text-gray: #4F4F4F;
+            --black-color: #000;
+            --link-text: #BDBDBD;
+            --horizontal-gray: #A9A9A9;
+            --text-hover: #EFBA47;
+            --background-orange: #F2994A;
+            --border-color: #828282;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            background: var(--background-color);
+            font-family: ' Montserrat', sans-serif;
+            color: var(--text-gray);
+            font-size: 16px;
+            line-height: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 48px;
+            line-height: 64px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+            color: var(--text-color);
+        }
+        
+        h3 {
+            font-style: italic;
+            font-weight: normal;
+            font-size: 18px;
+            color: var(--text-color);
+        }
+        
+        .header .description--block {
+            display: inline-flex;
+            width: 592px;
+            position: relative;
+            justify-content: flex-start;
+            align-items: flex-start;
+            left: 12px;
+            margin-bottom: 5px;
+            margin-left: 9px;
+            color: var(--text-gray);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        
+        .header img {
+            display: block;
+            margin-right: 12px;
+            margin-top: 18px;
+            font-size: 40px;
+        }
+        
+        section.header {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        
+        .text--block {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        
+        .left--block {
+            width: 60%;
+            text-align: justify;
+            margin: 0 auto;
+        }
+        
+        .ingredients--list,
+        .instruction--list {
+            list-style-type: none;
+            line-height: 32px;
+            padding: 0;
+        }
+        
+        .ingredients--list li:before {
+            content: '';
+            display: inline-block;
+            height: 21px;
+            width: 21px;
+            background-size: 21px;
+            background-repeat: no-repeat;
+            background-image: url('');
+            margin-right: 10px;
+            background-position: center center;
+            box-sizing: border-box;
+            vertical-align: middle;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+        
+        .instruction--list>li:first-of-type,
+        .instruction--list>li:last-of-type {
+            top: -7px;
+            line-height: 2;
+            vertical-align: text-top;
+        }
+        
+        .instruction--list>li:first-of-type::before,
+        .instruction--list>li:last-of-type::before,
+        .instruction--list>li:nth-of-type(6)::before {
+            top: 17%;
+            margin: 0;
+        }
+        
+        .instruction--list>li {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 33px;
+            list-style-type: none;
+            position: relative;
+            margin: 20px;
+            align-items: center;
+            display: flex;
+        }
+        
+        .instruction--list li:before {
+            content: attr(seq);
+            display: inline-flex;
+            height: 21px;
+            width: 21px;
+            padding: 5px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            line-height: 15px;
+            background: var(--background-orange);
+            color: var(--background-color);
+            position: absolute;
+            left: -25px;
+            top: 2%;
+        }
+        
+        .right--block {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 216px;
+            height: 367px;
+            background: var(--background-color);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+            border-radius: 12px;
+            padding: 2%;
+        }
+        
+        .right--block div:first-of-type .material-icons {
+            color: var(--background-orange);
+            font-size: 30px;
+            line-height: 19px;
+            vertical-align: middle;
+        }
+        
+        .right--block div:first-of-type p:last-child {
+            color: var(--background-orange);
+            margin-left: 27px;
+        }
+        
+        .right--block div:first-of-type,
+        .preparation p {
+            width: 216px;
+            line-height: 2px;
+            vertical-align: middle;
+        }
+        
+        .preparation .material-icons {
+            color: var(--text-gray);
+            font-size: 30px;
+            line-height: 14px;
+            vertical-align: middle;
+        }
+        
+        .preparation p:first-line {
+            font-weight: bold;
+            font-size: 10px;
+            text-transform: uppercase;
+        }
+        
+        .preparation:nth-child(n+2) p:last-child {
+            font-weight: 500;
+            font-size: 14px;
+            width: 80px;
+            margin-left: 28px;
+            color: var(--text-color);
+        }
+        
+        .link--line {
+            width: 500px;
+            height: 24px;
+            margin-left: 10%;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            color: var(--link-text);
+        }
+        
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        @media all and (max-width: 728px) {
+            .text--block {
+                flex-direction: column-reverse;
+            }
+            .right--block {
+                width: 100%;
+                height: 120px;
+            }
+            .right--block div:first-of-type {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            .right--block div.preparation:nth-child(n+2) {
+                width: 33%;
+                flex-wrap: nowrap;
+            }
+            .right--block div.preparation .material-icons {
+                line-height: 5px;
+                vertical-align: middle;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            .header img {
+                font-size: 30px;
+                margin: 18px 8px 0;
+            }
+            .header .description--block {
+                left: 0;
+                margin-left: 0;
+                width: 100%;
+            }
+            .header .description--block p {
+                font-size: 12px;
+            }
+            .text--block .right--block {
+                box-shadow: none;
+                margin: 0 auto;
+            }
+            .left--block {
+                width: 100%;
+                font-size: 16px;
+                font-weight: normal;
+            }
+            .instruction--list {
+                padding: 10px;
+                margin: 0 auto;
+            }
+            .instruction--list li {
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: normal;
+                margin: 7%;
+            }
+            .instruction--list li:before {
+                content: attr(seq);
+                display: inline-flex;
+                height: 36px;
+                width: 36px;
+                padding: 13px;
+                box-sizing: border-box;
+                border-radius: 4px;
+                background: var(--background-orange);
+                color: var(--background-color);
+                position: absolute;
+                left: -45px;
+            }
+        }

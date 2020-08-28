@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="author" content="Anita JOSEPH">
+
+    <link rel="icon" href="../icone.png">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Dev Challenges | Checkout page</title>
+</head>
+
+<body>
+    <section class="header">
+        <h1> Checkout</h1>
+    </section>
+    <div class="container main__container">
+        <div class="cart__container">
+            <div class="first__item flex text-center px-4 py-2 m-2">
+                <img class="flex-initial object-contain h-48" src="./img/photo1.png" alt="Vintage Backbag" />
+                <div class="flex-1 px-12 price__block">
+                    <h4 class="font-bold">Vintage Backbag</h4>
+                    <p class="price">$54,99
+                        <s>$94,99</s></p>
+                    <div class="counter__block">
+                        <button id="first__minus__counter" class="px-3 font-bold minus__counter">-</button>
+                        <p id="first__counter">1</p>
+                        <button id="first__additional__counter" class="px-3 font-bold additional__counter">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="second__item flex text-center px-4 py-2 m-2">
+                <img class="flex-initial object-contain h-48" src="./img/photo2.png" alt="Levi Shoes" />
+                <div class="flex-1 px-12 price__block">
+                    <h4 class="font-bold">Levi Shoes</h4>
+                    <p class="price">$54,99 <s>$94,99</s></p>
+                    <div class="counter__block">
+                        <button id="second__minus__counter" class="px-3 font-bold minus__counter">-</button>
+                        <p id="second__counter">1</p>
+                        <button id="second__additional__counter" class="px-3 font-bold additional__counter">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex total__amount">
+                <div class="flex-initial text-gray-700 text-center px-4 py-2 m-2">
+                    <h5>Shipping</h5>
+                </div>
+                <div class="flex-1 text-sm text-gray-700 text-right px-4 py-2 m-2">
+                    $19
+                </div>
+            </div>
+            <div class="border-t-2 border-black"></div>
+            <div class="flex total__amount">
+                <div class="flex-initial text-gray-700 text-center px-4 py-2 m-2">
+                    <h5>Total</h5>
+                </div>
+                <div class="flex-1 text-sm text-gray-700 text-right px-4 py-2 m-2">
+                    $148,99
+                </div>
+            </div>
+            <div class="border-t-2 border-black"></div>
+        </div>
+        <form name="checkForm" class="form__container">
+            <fieldset>
+                <h2>Contact Information</h2>
+                <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="email">Email</label>
+                    <input class="relative shadow appearance-none z-2 border rounded w-full py-2 px-8 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your email..." required>
+                    <i class="absolute transform -translate-y-6 h-8 w-8 mx-2 z-3 fa fa-envelope icon"></i>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="phone">
+							Telephone
+						</label>
+                    <input class="relative shadow z-2 appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="telephone" placeholder="Enter your phone number" required>
+                    <i class="absolute transform -translate-y-6 h-8 w-8 mx-2 z-3 fa fa-phone icon"></i>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Shipping address</h2>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="fname">Full name</label>
+                    <input class="relative z-2 shadow appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="fname" type="text" placeholder="Rodney Cotton" required>
+                    <i class="absolute transform -translate-y-6 h-8 w-8 mx-2 z-3 fa fa-user icon"></i>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="address">Address</label>
+                    <input class="relative z-2 shadow appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="address" type="text" placeholder="Your Address" required>
+                    <i class="absolute transform -translate-y-6 h-8 w-8 mx-2 z-3 fa fa-home icon"></i>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-bold mb-2" for="city">City</label>
+                    <input class="relative z-2 shadow appearance-none border rounded w-full py-2 px-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="city" type="text" placeholder="Your City" required>
+                    <i class="absolute transform -translate-y-6 h-8 w-8 mx-2 z-3 fa fa-building icon"></i>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block text-sm font-bold mb-2" for="country">Country</label>
+                        <div class="relative ">
+                            <select class="relative block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-8 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline ">
+								<option>France</option>
+								<option>United States of America</option>
+								<option>India</option>
+							</select>
+                            <i class="absolute transform -translate-y-6 h-6 w-6 px-2 mx-2 z-3 fa fa-globe"></i>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+									<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+								</svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="grid-zip">Postal code</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-6 leading-tight focus:outline-none focus:shadow-outline " id="grid-zip " type="text " placeholder="Your postal code " required>
+                        <i class="absolute transform -translate-y-6 h-6 w-6 mx-2 z-3 fa fa-briefcase"></i>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="md:flex md:items-left mb-6">
+                <div class="md:flex-initial"></div>
+                <label for="save" class="md:flex-1 block text-gray-500 font-bold">
+					<input class="mr-2 leading-tight" name="save" type="checkbox">
+					<span class="text-sm">Save this information for next time</span>
+				</label>
+            </div>
+            <div class="submit__button">
+                <button class="shadow bg-orange-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="checkform()">
+						Continue
+					</button>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        Anita JOSEPH @<a href="https://devchallenges.io/"> Dev Challenges</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
