@@ -13,14 +13,11 @@
     <style>
         body {
             background: no-repeat url("./img/computer.jpg");
-            background-size: cover;
             background-position: center;
             margin: 0;
             padding: 0;
             color: white;
-            height: auto;
-            display: flex;
-            flex-direction: column;
+            min-height: 100vh;
         }
         
         img {
@@ -34,9 +31,9 @@
         }
         
         .main__container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1em;
             margin: 10px;
             height: 100vh;
         }
@@ -48,9 +45,14 @@
         }
         
         a img {
-            width: 199px;
+            object-fit: cover;
+            width: 300px;
             height: 200px;
             border-radius: 19px;
+        }
+        
+        img {
+            max-width: 100%;
         }
         
         a img:hover {
@@ -67,10 +69,9 @@
             opacity: 1;
         }
         
-        .footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        footer {
+            grid-column: 1 / -1;
+            text-align: center;
             background-color: #3e78bb;
             font-size: 20px;
             color: #fff;
@@ -79,6 +80,7 @@
         }
         
         footer a {
+            text-align: center;
             color: #0000c1;
         }
     </style>
@@ -98,12 +100,7 @@
         <a href="./Edie-homepage-master/index.html"><img src="./img/edie-homepage-screenshot.png" alt="Edie home page" /></a>
         <a href="./Four-card-Feature-section/index.html"><img src="./img/four-card-features.png" alt="Four card features page" /></a>
         <a href="./Fylo-data-storage-component/index.html"><img src="./img/fylo-screenshot.png" alt="Fylo-data-storage-component" /></a>
-<<<<<<< HEAD
-=======
 
->>>>>>> master
-    </div>
-    <div class="footer">
         <footer>
             Anita JOSEPH @<a href="https://devchallenges.io/"> Dev Challenges</a>
         </footer>
