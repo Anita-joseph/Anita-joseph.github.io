@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Anita Joseph | Responsive front-end web design</title>
+    <title>Anita Joseph | Déceloppeur front-end web</title>
     <style>
         body {
             background: no-repeat url("./img/computer.jpg");
@@ -17,7 +17,20 @@
             margin: 0;
             padding: 0;
             color: white;
-            min-height: 100vh;
+            min-height: 200px;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .parallax {
+            background-image: url("./img/lotus-bckgrnd-img.jpg");
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
         img {
@@ -26,7 +39,20 @@
         
         .header {
             background-color: rgb(105, 163, 230);
+            display: flex;
+            justify-content: flex-end;
             padding: 20px;
+        }
+        
+        .header nav {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        
+        .header nav a li {
+            width: 120px;
+            margin: 0 5px;
             text-align: center;
         }
         
@@ -61,7 +87,6 @@
         }
         
         a img:hover {
-            /* change text color on hover */
             color: var(--color-blue);
         }
         
@@ -88,8 +113,20 @@
 
 <body>
     <section class="header">
-        <h1> Responsive design</h1>
+        <h1> </h1>
+        <nav>
+            <a>
+                <li>Home</li>
+            </a>
+            <a>
+                <li>My Collections</li>
+            </a>
+            <a>
+                <li>Contact</li>
+            </a>
+        </nav>
     </section>
+    <section class="parallax"></section>
     <div class="main__container">
         <a href="./404-not-found-master/index.html"><img src="./img/404-screenshot.PNG" alt="404 not found page" /></a>
         <a href="./Team-page/index.html"><img src="./img/team-page-screenshot.PNG" alt="Team page" /></a>
@@ -101,10 +138,12 @@
         <a href="./Four-card-Feature-section/index.html"><img src="./img/four-card-features.png" alt="Four card features page" /></a>
         <a href="./Fylo-data-storage-component/index.html"><img src="./img/fylo-screenshot.png" alt="Fylo-data-storage-component" /></a>
 
-        <footer>
-            Anita JOSEPH @<a href="https://devchallenges.io/"> Dev Challenges</a>
-        </footer>
     </div>
+    <section class="parallax"></section>
+    <footer>
+        Anita JOSEPH @<a href="https://devchallenges.io/"> Dev Challenges</a>
+    </footer>
+
 </body>
 
 </html>
