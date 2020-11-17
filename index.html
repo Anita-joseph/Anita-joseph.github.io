@@ -40,7 +40,7 @@
         .header {
             background-color: rgb(105, 163, 230);
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             padding: 20px;
         }
         
@@ -48,6 +48,7 @@
             display: flex;
             justify-content: space-around;
             flex-direction: row;
+            align-items: center;
         }
         
         .header nav a li {
@@ -122,12 +123,17 @@
             line-height: 1;
             font-size: 28px;
         }
+        
+        .profile--image img {
+            width: 90px;
+            border-radius: 50%;
+        }
     </style>
 </head>
 
 <body>
     <section class="header">
-        <h1> </h1>
+        <span class="profile--image"><img src="./img/profil.jpg"> </span>
         <nav>
             <a href="#home">
                 <li>Home</li>
