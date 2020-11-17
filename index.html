@@ -44,17 +44,22 @@
             padding: 20px;
         }
         
-        .header nav {
+        .header nav ul {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-direction: row;
             align-items: center;
         }
         
-        .header nav a li {
-            width: 120px;
+        .header nav ul li {
+            width: 180px;
             margin: 0 5px;
             text-align: center;
+            list-style: none;
+        }
+        
+        .header nav ul li {
+            font-size: 20px;
         }
         
         .main__container {
@@ -125,7 +130,8 @@
         }
         
         .profile--image img {
-            width: 90px;
+            width: 40px;
+            margin: 0 20px;
             border-radius: 50%;
         }
     </style>
@@ -135,15 +141,16 @@
     <section class="header">
         <span class="profile--image"><img src="./img/profil.jpg"> </span>
         <nav>
-            <a href="#home">
-                <li>Home</li>
-            </a>
-            <a href="#collection">
-                <li>My Collections</li>
-            </a>
-            <a href="#contact">
-                <li>Contact</li>
-            </a>
+            <ul>
+                <li> <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#collection">My Collections</a>
+                </li>
+                <li> <a href="#contact">
+					Contact</a>
+                </li>
+            </ul>
         </nav>
     </section>
     <section class="parallax"></section>
