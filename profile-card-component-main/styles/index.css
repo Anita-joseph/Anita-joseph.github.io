@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --color-grayish-blue: #6a6f81;
+    --dark-desaturated-blue: #2d3248;
+    --dark-cyan: #19a2ae;
+    --dark-gray: #969696;
+}
+
+body {
+    max-width: 1440px;
+    font-family: "Kumbh", sans-serif;
+    font-size: 14px;
+    color: var(--dark-desaturated-blue);
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-position: top -700px left -900px, bottom -800px right -850px;
+    background-color: var(--dark-cyan);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr {
+    color: var(--color-grayish-blue);
+    width: 90%;
+}
+
+.container {
+    /* max-width: 100%; */
+    width: 345px;
+    margin: 7% auto;
+}
+
+.card.teal {
+    background-image: url(../images/bg-pattern-card.svg);
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card.white {
+    border-radius: 20px 20px;
+}
+
+.card-panel .card {
+    width: 100%;
+    padding: 0;
+    height: 250px;
+    box-shadow: none;
+}
+
+em,
+pre {
+    color: var(--color-grayish-blue);
+}
+
+.card.white img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -90px;
+    left: 36%;
+}
+
+.card-panel {
+    padding: 0;
+    border-radius: 20px 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article p {
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 28px auto;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:345px) and (max-width:745px) {
+    body {
+        margin: 5% auto 7%;
+        max-width: 350px;
+        font-size: 14px;
+    }
+    .container {
+        width: 80%;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
