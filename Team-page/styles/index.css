@@ -100,9 +100,6 @@ footer {
 }
 
 @media all and (max-width: 768px) {
-	body {
-		/* background-color: red; */
-	}
 
 	.header--section {
 		display: grid;
